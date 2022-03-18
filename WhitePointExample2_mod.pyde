@@ -56,6 +56,12 @@ def draw():
     if pointX < 3:
         deltaX = 1
         
+    if keyPressed:
+    if key == BACKSPACE:
+        global it
+        save('result_it' + str(it) + '.jpg')
+        exit()
+        
     it += 1
     pointX_prev = pointX
     pointY_prev = pointY
